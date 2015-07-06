@@ -6545,7 +6545,7 @@
       $toolbar.prependTo($editor);
       var keyMap = options.keyMap[agent.isMac ? 'mac' : 'pc'];
       createPalette($toolbar, options);
-      createTooltip($toolbar, keyMap, 'bottom');
+      createTooltip($toolbar, keyMap, options.toolbarTooltip || 'bottom');
 
       //05. create Popover
       var $popover = $(tplPopovers(langInfo, options)).prependTo($editor);
