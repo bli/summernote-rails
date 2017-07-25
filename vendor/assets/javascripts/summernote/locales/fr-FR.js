@@ -10,7 +10,7 @@
         name: 'Famille de police',
         strikethrough: 'Barré',
         superscript: 'Exposant',
-        subscript: 'Indicé',
+        subscript: 'Indice',
         size: 'Taille de police'
       },
       image: {
@@ -22,10 +22,24 @@
         floatLeft: 'Aligné à gauche',
         floatRight: 'Aligné à droite',
         floatNone: 'Pas d\'alignement',
-        dragImageHere: 'Faites glisser une image avec la souris dans ce cadre',
+        shapeRounded: 'Forme: Rectangle arrondie',
+        shapeCircle: 'Forme: Cercle',
+        shapeThumbnail: 'Forme: Vignette',
+        shapeNone: 'Forme: Aucune',
+        dragImageHere: 'Faites glisser une image ou un texte dans ce cadre',
+        dropImage: 'Lachez l\'image ou le texte',
         selectFromFiles: 'Choisir un fichier',
+        maximumFileSize: 'Taille de fichier maximale',
+        maximumFileSizeError: 'Taille maximale du fichier dépassée',
         url: 'URL de l\'image',
         remove: 'Supprimer l\'image'
+      },
+      video: {
+        video: 'Vidéo',
+        videoLink: 'Lien vidéo',
+        insert: 'Insérer une vidéo',
+        url: 'URL de la vidéo',
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ou Youku)'
       },
       link: {
         link: 'Lien',
@@ -40,11 +54,11 @@
         table: 'Tableau'
       },
       hr: {
-        insert: 'Insérer une ligne horizontale de séparation'
+        insert: 'Insérer une ligne horizontale'
       },
       style: {
         style: 'Style',
-        normal: 'Normal',
+        p: 'Normal',
         blockquote: 'Citation',
         pre: 'Code source',
         h1: 'Titre 1',
@@ -88,7 +102,37 @@
         textFormatting: 'Mise en forme du texte',
         action: 'Action',
         paragraphFormatting: 'Mise en forme des paragraphes',
-        documentStyle: 'Style du document'
+        documentStyle: 'Style du document',
+        extraKeys: 'Touches supplémentaires'
+      },
+      help: {
+        'insertParagraph': 'Insérer paragraphe',
+        'undo': 'Défaire la dernière commande',
+        'redo': 'Refaire la dernière commande',
+        'tab': 'Tabulation',
+        'untab': 'Tabulation arrière',
+        'bold': 'Mettre en caractère gras',
+        'italic': 'Mettre en italique',
+        'underline': 'Mettre en souligné',
+        'strikethrough': 'Mettre en texte barré',
+        'removeFormat': 'Nettoyer les styles',
+        'justifyLeft': 'Aligner à gauche',
+        'justifyCenter': 'Centrer',
+        'justifyRight': 'Aligner à droite',
+        'justifyFull': 'Justifier à gauche et à droite',
+        'insertUnorderedList': 'Basculer liste à puces',
+        'insertOrderedList': 'Basculer liste ordonnée',
+        'outdent': 'Diminuer le retrait du paragraphe',
+        'indent': 'Augmenter le retrait du paragraphe',
+        'formatPara': 'Changer le paragraphe en cours en normal (P)',
+        'formatH1': 'Changer le paragraphe en cours en entête H1',
+        'formatH2': 'Change current block\'s format as entête H2',
+        'formatH3': 'Change current block\'s format as entête H3',
+        'formatH4': 'Change current block\'s format as entête H4',
+        'formatH5': 'Change current block\'s format as entête H5',
+        'formatH6': 'Change current block\'s format as entête H6',
+        'insertHorizontalRule': 'Insérer ligne horizontale',
+        'linkDialog.show': 'Afficher fenêtre d\'hyperlien'
       },
       history: {
         undo: 'Annuler la dernière action',

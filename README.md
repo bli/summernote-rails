@@ -13,8 +13,7 @@ The version of summernote-rails is matched with that of summernote editor.
 Add the following gems to your application's Gemfile:
 
 ```ruby
-gem 'summernote-rails'
-gem 'font-awesome-rails' # required
+gem 'summernote-rails', 'current version number'
 gem 'bootstrap-sass'     # required
 ```
 
@@ -30,7 +29,6 @@ In app/assets/stylesheets/application.scss,
 
 ```css
 @import "bootstrap";
-@import "font-awesome";
 @import "summernote";
 ```
 
@@ -71,7 +69,7 @@ $('[data-provider="summernote"]').each(function(){
 })
 ```
 
-Or, if you want to code in coffeescript, 
+Or, if you want to code in coffeescript,
 
 ```coffeescript
 $ ->
@@ -89,7 +87,7 @@ Then, if you are using simple_form, you can use the `:summernote` input type. Th
 <% end %>
 ```  
 
-Or, if you prefer haml-style, 
+Or, if you prefer haml-style,
 
 ```haml
 = simple_form_for(:example) do | f |
@@ -141,8 +139,8 @@ $ ->
 If you want to use a plugin, you have to include the corresponding file. In `app/assets/javascripts/application.js`, you should add the following:
 
 ```js
-// load video plugin
-//= require summernote/plugin/summernote-ext-video.js
+// load hello plugin
+//= require summernote/plugin/hello/summernote-ext-hello
 ```
 
 and update summernote option.
@@ -155,7 +153,7 @@ and update summernote option.
     $('#summernote').summernote({
       toolbar : [
         ...
-        ['group', [ 'video' ]]
+        ['insert', [ 'hello' ]]
         ...
       ]
     });
@@ -171,21 +169,21 @@ Also, you can move the above javascript code lines to app/assets/javascripts/sum
       toolbar : [
         ...
         [
-          'group'
-            [ 
-              'video' 
+          'insert'
+            [
+              'hello'
             ]
         ]
         ...
       ]
 ```
 
-* [plugin example](https://github.com/summernote/summernote/blob/develop/examples/plugin-video.html)
+* [plugin example](https://github.com/summernote/summernote/blob/master/examples/plugin-hello.html)
 
 
 ## Sample projects
 
-For an example, take a look at the summernote-rails-test folder in this repository.
+For an example, take a look at the `example` folder in this repository.
 
 ## Contributing
 
